@@ -22,10 +22,14 @@
     <p class="intro">
         Saya mahasiswa baru Universitas Muhammadiyah Surabaya.
     </p>
+
+    <button class="btn" onclick="perkenalan()">Kenalan Yuk</button>
+    <button class="btn" onclick="toggleDarkMode()">Dark Mode</button>
 </section>
 
 <section id="profile" class="section profile">
     <h2>Profile & Biodata</h2>
+
     <div class="profile-container">
         <div class="profile-image">
             <img src="assets/img/profile.jpeg" alt="Foto Profil">
@@ -35,22 +39,22 @@
             <p>
                 Saya adalah seorang web developer yang fokus pada pengembangan
                 aplikasi berbasis web menggunakan HTML, CSS, JavaScript, Vue.js,
-                dan PHP. Saya senang mempelajari hal baru dan mengembangkan sistem
-                yang bermanfaat.
+                dan PHP.
             </p>
 
+            <button class="btn" onclick="toggleBiodata()">Tampilkan / Sembunyikan Biodata</button>
+
             <h3>Biodata</h3>
-            <ul class="biodata">
+            <ul class="biodata" id="biodata">
                 <li><strong>Nama:</strong> Abidzar Dzakwan Sahudi</li>
-                <li><strong>Tempat, Tanggal Lahir :</strong> Surabaya, 03 Juni 2007</li>
+                <li><strong>Tempat, Tanggal Lahir:</strong> Surabaya, 03 Juni 2007</li>
                 <li><strong>Alamat:</strong> Surabaya</li>
-                <li><strong>Pendidikan:</strong> Mahasiswa </li>
+                <li><strong>Pendidikan:</strong> Mahasiswa</li>
                 <li><strong>Keahlian:</strong> HTML, CSS, JavaScript, Vue.js, PHP</li>
             </ul>
         </div>
     </div>
 </section>
-
 
 <section id="contact" class="section contact">
     <h2>Contact</h2>
@@ -62,5 +66,6 @@
     <p>&copy; 2026 - Portofolio Saya</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>

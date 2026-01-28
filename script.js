@@ -1,12 +1,13 @@
-// Mengambil elemen tombol dari HTML
-const tombol = document.getElementById('tombolSapa');
+function perkenalan() {
+    alert("Halo! Saya Abidzar 👋 Mahasiswa & Web Developer");
+}
 
-// Menambahkan aksi ketika diklik
-tombol.addEventListener('click', function() {
-    // Menampilkan notifikasi interaktif
-    alert("Terima kasih sudah berkunjung ke website saya!");
+function toggleBiodata() {
+    const biodata = document.getElementById("biodata");
+    biodata.style.display =
+        biodata.style.display === "none" ? "block" : "none";
+}
 
-    // Bonus: Mengubah teks tombol secara instan
-    tombol.innerText = "Sapaan Terkirim!";
-    tombol.style.backgroundColor = "#2980b9";
-});
+function toggleDarkMode() {
+    document.body.classList.toggle("dark-mode");
+}
